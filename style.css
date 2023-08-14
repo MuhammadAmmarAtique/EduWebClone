@@ -35,3 +35,21 @@ nav a
     text-align: center;
     /* float: left; */
 }
+
+/* Website's main tag */
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h2
+{
+    padding: 20px;
+}
+
+/* temporary styling */
+video
+{
+    background-color: aqua;
+}
