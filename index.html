@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apni Kaksha | Home</title>
-    <!-- Attached css file -->
-    <link rel="stylesheet" href="style.css">
+
+
+
     <!-- For Icon along with Title in top of website   -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/logo/favicon//favicon-16x16.png">
     <link rel="manifest" href="/assets/logo/favicon//site.webmanifest">
 
+    <!-- Flickity css file for curosels -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Attached css file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
 <!-- Website's Header: -->
     <header>
       <div class="banner"></div>    
@@ -21,11 +29,11 @@
 
     <!-- Website's Navbar: -->
     <nav>
-        <a href="#">Home</a>
-        <a href="#">College Reviews</a>
-        <a href="#">Courses</a>
-        <a href="#">Study Material</a>
-        <a href="#">Login/Signup</a>
+        <a class="border" href="#">Home</a>
+        <a class="border" href="#">College Reviews</a>
+        <a class="border" href="#">Courses</a>
+        <a class="border" href="#">Study Material</a>
+        <a  class="border" id="lastitem" href="#">Login/Signup</a>
     </nav>
 
     <!-- Website's main tag/ main area of content: -->
@@ -33,39 +41,58 @@
     <main>
 
       <section>
-        <h2>Courses</h2>
-        <video controls src="assets/courses/chemistry/lectures/Electrochemistry Lecture 3.mp4" width="33%vw"></video>
-        <video controls src="assets/courses/cpp/lectures/cpp.mp4" width="33%vw"></video>
-        <video controls src="assets/courses/maths/lectures/maths.mp4" width="33%vw"></video>
-        <br>
-        <br>
-        <br>
-        <video controls src="assets/courses/python/lectures/python-lec1.mp4" width="33%vw"></video>
-        <video controls src="assets/courses/webdev/lectures/html.mp4" width="33%vw"></video>
-        <video  controls src="assets/courses/chemistry/lectures/electrochemistry.mp4" width="33%vw"></video>
+        <h2> <span id="sh">Courses</span> </h2>
+        <!-- Flickity curosel -->
+        <div class="carousel" data-flickity>
+          <div class="carousel-cell"><video controls src="assets/courses/chemistry/lectures/Electrochemistry Lecture 3.mp4" ></video></div>
+          <div class="carousel-cell"><video controls src="assets/courses/cpp/lectures/cpp.mp4" ></video></div>
+          <div class="carousel-cell"> <video controls src="assets/courses/maths/lectures/maths.mp4" ></video></div>
+          <div class="carousel-cell"><video controls src="assets/courses/python/lectures/python-lec1.mp4" ></video></div>
+          <div class="carousel-cell"><video controls src="assets/courses/webdev/lectures/html.mp4" ></video></div>
+          <div class="carousel-cell"><video  controls src="assets/courses/chemistry/lectures/Electrochemistry Lecture 3.mp4" ></video></div>
+        </div>
       </section>  
 
       <section>
-        <h2>College Reviews</h2>
-
-        <iframe width="33%" height="315" src="https://www.youtube.com/embed/1VfqlKtVF7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="33%" height="315" src="https://www.youtube.com/embed/j0biLzzJ2XQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="33%" height="315" src="https://www.youtube.com/embed/zGJ5BlbKfLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2> <span id="sh">College Reviews</span> </h2>
+         
+      <div class="carousel" data-flickity='{ "autoPlay": true }'>
+        <div class="carousel-cell wrapper">
+        <iframe  src="https://www.youtube.com/embed/1VfqlKtVF7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-cell wrapper">
+        <iframe src="https://www.youtube.com/embed/j0biLzzJ2XQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-cell wrapper">
+        <iframe  src="https://www.youtube.com/embed/zGJ5BlbKfLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
         
       </section>
 
 
       <section>
-        <h2>Study Material</h2>
-        <a href="assets/courses/chemistry/notes/Class 12 Solution Complete NCERT.pdf"> <img src="assets/courses/chemistry/thumbnail/electrochemistry.jpg" alt ="study notes" height="50%" width="24%"> </a>
-        <a href="assets/courses/chemistry/notes/Coordination Compound 3.pdf"> <img src="assets/courses/cpp/thumbnail/cpp.jpg" alt ="study notes" height="50%" width="24%"> </a>
-        <a href="assets/courses/chemistry/notes/Electrochemistry  Complete NCERT.pdf"> <img src="assets/courses/maths/thumbnail/maths.jpg" alt ="study notes" height="50%" width="24%"> </a>
-        <a href="assets/courses/chemistry/notes/Solid State New Complete Chapter Notes.pdf"> <img src="assets/courses/python/thumbnail/python-lec1.jpg" alt ="study notes" height="50%" width="24%"> </a>
+        <h2> <span id="sh">Notes</span></h2>
+
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell">
+    <a href="assets/courses/chemistry/notes/Class 12 Solution Complete NCERT.pdf"> <img src="assets/courses/chemistry/thumbnail/electrochemistry.jpg" alt ="study notes" class="responsive-img"> </a>
+  </div>
+  <div class="carousel-cell">
+    <a href="assets/courses/chemistry/notes/Coordination Compound 3.pdf"> <img src="assets/courses/cpp/thumbnail/cpp.jpg" alt ="study notes" class="responsive-img"> </a>
+  </div>
+  <div class="carousel-cell">
+    <a href="assets/courses/chemistry/notes/Electrochemistry  Complete NCERT.pdf"> <img src="assets/courses/maths/thumbnail/maths.jpg" alt ="study notes" class="responsive-img"> </a>
+  </div>
+  <div class="carousel-cell">
+    <a href="assets/courses/chemistry/notes/Solid State New Complete Chapter Notes.pdf"> <img src="assets/courses/python/thumbnail/python-lec1.jpg" alt ="study notes" class="responsive-img" > </a>
+</div>
+
         
       </section>
 
       <section class="last">
-        <h2>Our Founder</h2>
+        <h2><span id="sh">Our Founder</span></h2>
         <img src="images/aman dattarwaal.jpg" alt="Our Founder's picture" width="300px"> <br> 
         <h3>Aman Dhattarwal</h3>  
         <div>
@@ -81,13 +108,22 @@
     </main>
 
     <footer>
-    
-    <a href="#">FAQ</a>
-    <a href="#">Contact Us</a>
-    <a href="#">Terms of Use</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Refund Policy</a>
-    <a class="copyright" href="#">&copy; 2020 | Apni Kaksha</a> 
+    <a class="border" href="#">FAQ</a>
+    <a class="border" href="#">Contact Us</a>
+    <a class="border" href="#">Terms of Use</a>
+    <a class="border" href="#">Privacy Policy</a>
+    <a class="border" href="#">Refund Policy</a>
+    <a class="border copyright" href="#">&copy; 2020 | Apni Kaksha</a> 
     </footer>
+
+
+
+
+
+
+    <!-- Flickity js file for curosels -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
+
 </body>
 </html>
