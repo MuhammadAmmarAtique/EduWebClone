@@ -3,8 +3,6 @@
 
 This repository contains a cloned version of the Apni Kaksha educational website. The project focuses on emulating the visual appearance and key functionalities of the original website using HTML and CSS. It provides users with a familiar interface to access educational content, courses, college reviews, study material, and information about the founder.
 
-**Check out the live cloned website: [Apni Kaksha Clone on GitHub Pages](https://muhammadammaratique.github.io/EduWebClone/)**
-
 ### Preview
 
 ![Apni Kaksha Clone Preview](preview.png)
