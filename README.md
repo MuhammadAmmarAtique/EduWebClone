@@ -7,7 +7,7 @@ This repository contains a cloned version of the Apni Kaksha educational website
 
 ### Preview
 
-![Apni Kaksha Clone Preview](path/to/preview.png)
+![Apni Kaksha Clone Preview]preview.png
 
 ### Features
 
@@ -27,7 +27,7 @@ This repository contains a cloned version of the Apni Kaksha educational website
 
 1. Clone the repository using the following command:
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/MuhammadAmmarAtique/EduWebClone
    ```
 
 2. Open the `index.html` file in your web browser to explore the cloned Apni Kaksha website.
