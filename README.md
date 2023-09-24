@@ -45,4 +45,3 @@ This project is currently a personal endeavor and is not open to external contri
 
 This project is intended for educational purposes and serves as a demonstration of HTML and CSS skills. It is not associated with the original Apni Kaksha website. All images, videos, and content from the original website are subject to their respective licenses.
 
-Remember to replace placeholder URLs and paths with the actual URLs and paths of the resources you used in your project.
