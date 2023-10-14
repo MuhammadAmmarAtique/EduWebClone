@@ -5,7 +5,7 @@ This repository contains a cloned version of the Apni Kaksha educational website
 
 ### Preview
 
-![Apni Kaksha Clone Preview](images/preview.png)
+![Apni Kaksha Clone Preview](images/screenshot.png)
 
 ### Features
 
